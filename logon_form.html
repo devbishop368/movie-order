@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logon - myMovies</title>
+		<link rel='stylesheet' type='text/css' href='../css/site.css' />
+	</head>
+	<body style="background-color: #008080;">
+		<h2 class="myMovies">myMovies Xpress!</h2>
+
+	<?php if($message != ""): ?> 
+		<p><span style='color:red;'> <?php echo $message ?></span></p>
+	<?php endif; ?>
+	
+		<p class="pTagMyMovies">Enter your username and password to login.</p>
+		<form action='./logon.php' method='post'> 
+			<label><p class="pTagNewLineUndoneMyMovies">Username:</p> <input type='text' name='username' required></label><br/><br/>
+			<label><p class="pTagNewLineUndoneMyMovies">Password:</p> <input type='password' name='password' required></label><br/><br/>
+			<input class="myMoviesReset" type='reset' value='Clear'>&nbsp;&nbsp;<input class="myMoviesSubmit" type='submit' value='Login'>
+		</form>
+		<br/><br/>
+		<a href='../index.html'>ePortfolio</a>
+	</body>
+</html>
